@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package HelloFresh.Message.DeliveryRegions;
+
+message RegionWasCreated {
+  string regionId = 1;
+  string country = 2;
+  string handle = 3;
+  string name = 4;
+  string listId = 5;
+}
