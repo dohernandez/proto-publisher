@@ -1,0 +1,10 @@
+version: '3'
+services:
+  # Rabbit MQ
+  rabbitmq:
+    image: rabbitmq:3.6.1-management
+    ports:
+      - "8012:15672"
+      - "9999:5672"
+    volumes:
+      - .ssh/:/root/.ssh/:ro
